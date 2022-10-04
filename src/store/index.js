@@ -15,7 +15,7 @@ export const useStore = create((set, get) => ({
   
   ProductAdd(item) {
     const isProduct =
-      get().ProductsAddedCart.find((product) => product.id === item.id) !==
+      get().ProductsAddedCart.find((product) => product.Id === item.Id) !==
       undefined;
     if (isProduct) {
       alert("Producto Ya Esta Agregado!");
@@ -36,7 +36,7 @@ export const useStore = create((set, get) => ({
 
   IncreaseQuantity(item) {
     const updateCantidad = get().ProductsAddedCart.map((product) =>
-      product.id === item.id
+      product.Id === item.Id
         ? { ...product, quantity: (product.quantity += 1) }
         : product
     );
@@ -47,7 +47,7 @@ export const useStore = create((set, get) => ({
   /**************************************************** */
   DecreaseQuantity(item) {
     const updateCantidad = get().ProductsAddedCart.map((product) =>
-      product.id === item.id
+      product.Id === item.Id
         ? { ...product, quantity: (product.quantity -= 1) }
         : product
     );
@@ -66,7 +66,7 @@ export const useStore = create((set, get) => ({
     const ShopingCart = get().ProductsAddedCart;
     const TotalProducts = ShopingCart.length;
     const TotalPrice = ShopingCart.reduce(
-      (priceTotal, product) => priceTotal + product.price * product.quantity,
+      (priceTotal, product) => priceTotal + product.Price * product.quantity,
       0
     );
     const TotalUnits = ShopingCart.reduce(
@@ -79,7 +79,7 @@ export const useStore = create((set, get) => ({
   DeleteCartProduct(item) {
     const ProductFilter = get().ProductsAddedCart;
     const newproduct = ProductFilter.filter(
-      (products) => products.id !== item.id
+      (products) => products.Id !== item.Id
     );
     set({ ProductsAddedCart: newproduct });
     get().CalculeTotal();
