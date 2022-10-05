@@ -8,6 +8,7 @@ function ProductsList() {
   const { ProductAdd, DataFecth } = useStore();
   return (
     <div>
+
       <ProductNabvar />
       <div className="products">
         {CARDCONTENT.map((product) => (
