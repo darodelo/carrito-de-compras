@@ -5,7 +5,7 @@ import React from 'react'
 const NavBar = () => {
   return (
    
-<nav className="header flex__between">
+<nav className="navbar navbar-expand-lg navbar-light bg-light">
 
   <div className="collapse navbar-collapse" id="navbarText">
     <ul className="navbar-nav mr-auto">
