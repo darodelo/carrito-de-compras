@@ -5,18 +5,21 @@ import React from 'react'
 const NavBar = () => {
   return (
    
-<nav className="navbar navbar-expand-lg navbar-light bg-light">
+<nav className="NavBarNueva navbar-expand-lg navbar-light bk-light">
 
   <div className="collapse navbar-collapse" id="navbarText">
     <ul className="navbar-nav mr-auto">
-      <li className="nav-item">
+      <li className="nav-item active">
         <a className="nav-link" href="#">Inicio</a>
       </li>
       <li className="nav-item">
-        <a class="nav-link" href="#">Contacto</a>
+        <a className="nav-link" href="#">Productos</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Nosotros</a>
+        <a className="nav-link" href="#">Como Comprar</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="#">Contacto</a>
       </li>
     </ul>
    

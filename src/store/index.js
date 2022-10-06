@@ -1,4 +1,6 @@
 import create from "zustand";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export const useStore = create((set, get) => ({
   DataFecth: [],

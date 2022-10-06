@@ -3,6 +3,7 @@ import './App.css';
 import ShoppingCart from './Components/ShoppingCart';
 import ProductsList from './Components/ProductsList';
 import useStore from './store';
+import Body from './Components/body/Body';
 
 function App() {
   const { ShoppingCartStatus,FecthData, } = useStore();
@@ -12,11 +13,15 @@ function App() {
   },[])
   
   return (
+    
+   
     <div className="App">
+      
       {
         ShoppingCartStatus ? <ShoppingCart /> : <ProductsList />
         
       }
+    
     </div>
   );
 }

@@ -10,7 +10,10 @@ function ProductsList() {
     <div>
 
       <ProductNabvar />
-      <div className="products">
+      <div className="Fondo products">
+        <p className="TextoFondo">Bienvenidos a</p>
+        <p className="TextoFunko">FUNKOS</p>
+        <p className="TextoArgentina">ARGENTINA</p>
         {CARDCONTENT.map((product) => (
           <div className="product__card flex__between" key={product.Id}>
             <img className="product__img" src={product.Img} alt="" />
