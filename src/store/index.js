@@ -20,7 +20,7 @@ export const useStore = create((set, get) => ({
       get().ProductsAddedCart.find((product) => product.Id === item.Id) !==
       undefined;
     if (isProduct) {
-      alert("Producto Ya Esta Agregado!");
+      alert("Tu Funko ya está en el Carrito");
       return;
     }
     const ProductNew = { ...item, quantity: 1 };

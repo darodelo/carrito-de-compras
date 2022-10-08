@@ -20,7 +20,7 @@ function ProductsList() {
             <p className="product__name">{product.ProductName}</p>
             <p>Precio : U$${product.Price}</p>
             <button className="product__btn" onClick={() => ProductAdd(product)}>
-             Agregar Al Carrio
+             Agregar Al Carrito
             </button>
           </div>
         ))}
