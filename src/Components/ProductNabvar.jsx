@@ -5,6 +5,7 @@ import NavBar from "./navBar/NavBar";
 
 
 
+
 const ProductNabvar = () => {
   const {
     
@@ -18,6 +19,7 @@ const ProductNabvar = () => {
       <span className="header__title" >FUNKOS <img className="header__IconFunko" src="Icon/IconFunko.jpg" />  
          </span>
         <NavBar/>
+        
       <div className="header__icon flex__center">
         
         <img
@@ -26,7 +28,7 @@ const ProductNabvar = () => {
           onClick={() => OpenShoppingCart()}
         />
        
-        
+    
         <span className="header__quantity flex__center">
           {ProductsAddedCart.length}
           
