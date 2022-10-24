@@ -1,0 +1,24 @@
+.trademarks-banner {
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;;
+    flex-wrap: wrap;
+}
+
+.trademarks-img-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+    background-color: #FAECE4;
+    padding: 10%;
+    height: 90px;
+    width: 300px;
+    margin: 10px;
+    box-shadow: 4px 4px 4px 0px #F0B09C;
+    ;
+}
