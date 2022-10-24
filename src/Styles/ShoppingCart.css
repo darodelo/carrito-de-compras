@@ -1,9 +1,12 @@
 .shopping-cart {
   width: 100%;
-  color: #fff;
+  color: #000;
   padding-left: 1em;
   height: 100vh;
   overflow-y: scroll;
+  padding-top: 60px;
+  padding-bottom: 200px;
+  background-color: #fff;
 }
 .shopping-cart__products{
   margin-bottom: 2em;
