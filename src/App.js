@@ -8,6 +8,7 @@ import ProductNabvar from "./Components/ProductNavbar";
 import Welcome from "./Components/Welcome";
 import Footer from './Components/Footer/Footer';
 import InfoBanner from './Components/InfoBanner';
+import TrademarksBanner from './Components/TrademarksBanner';
 
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
         {
           ShoppingCartStatus ? <ShoppingCart /> : <Welcome />       
         }
+
+        <TrademarksBanner />
 
         <ProductsList />        
 
