@@ -1,10 +1,42 @@
+.products-section-title {
+  background-color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: -2%;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products-container {
+  width: 100%;
+  
+}
+
+
+.cardStyle {
+  width: 200px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 5px;
+
+}
+
+
 .products {
   display: grid;
   gap: 2em;
   grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
   padding: 1em;
-  padding-top: 50em;
-  
+  background-color: #fff;
 }
 .product__card {
   width: 100%;
@@ -46,11 +78,13 @@
   text-align: left;
   display: flex;
 }
+
 .Fondo{
-  background-image:url(/public/Fondo.jpg);
+  background-image:url(/public/background-img2.jpg);
   background-size: cover;
-  height: 0px;
+  height: 100vh;
   background-repeat: no-repeat;
+  background-position-y: -100px;
 }
 .TextoFondo{
 height: 96px;
