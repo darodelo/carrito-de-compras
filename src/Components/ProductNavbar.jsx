@@ -5,8 +5,7 @@ import NavBar from "./navBar/NavBar";
 
 
 
-
-const ProductNabvar = () => {
+const ProductNavbar = () => {
   const {
     
     OpenShoppingCart,
@@ -16,19 +15,24 @@ const ProductNabvar = () => {
      
     <header className="header flex__between">
     
-      <span className="header__title" >FUNKOS <img className="header__IconFunko" src="Icon/IconFunko.jpg" />  
-         </span>
-        <NavBar/>
+       <img
+        src="../funko-logo-white.png" 
+        alt="Funko Logo"
+        height="40px" />  
         
+        <NavBar/>
       <div className="header__icon flex__center">
         
+      <a href="#">
         <img
           className="header__iconImg"
           src="/Icon/iconCart.png"
           onClick={() => OpenShoppingCart()}
         />
+        </a>
        
-    
+       
+        
         <span className="header__quantity flex__center">
           {ProductsAddedCart.length}
           
@@ -40,4 +44,4 @@ const ProductNabvar = () => {
   );
 };
 
-export default ProductNabvar;
+export default ProductNavbar;
