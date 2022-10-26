@@ -25,14 +25,14 @@
   padding: 0.7em;
   cursor: pointer;
 }
-.header__IconFunko{
+/* .header__IconFunko{
   height: 50px;
   width: 50px;
   padding: 0em;
   border-radius: 50%;
   margin-top: -10px;
   margin-left: 20px;
-}
+} */
 .header__quantity {
   font-size: 1em;
   position: absolute;
