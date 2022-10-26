@@ -2,6 +2,7 @@ import useStore from "../store/index";
 import "../App.css";
 import "../Styles/Header.css";
 import NavBar from "./navBar/NavBar";
+import "../Styles/Navbar.css"
 
 
 
@@ -15,17 +16,17 @@ const ProductNavbar = () => {
      
     <header className="header flex__between">
     
-       <img
+       <img className="IconoFunkoBlanco"
         src="../funko-logo-white.png" 
         alt="Funko Logo"
-        height="40px" />  
+         />  
         
         <NavBar/>
       <div className="header__icon flex__center">
         
       <a href="#">
         <img
-          className="header__iconImg"
+          className="IconoCarrito"
           src="/Icon/iconCart.png"
           onClick={() => OpenShoppingCart()}
         />

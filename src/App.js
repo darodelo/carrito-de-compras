@@ -9,6 +9,7 @@ import Welcome from "./Components/Welcome";
 import Footer from './Components/Footer/Footer';
 import InfoBanner from './Components/InfoBanner';
 import TrademarksBanner from './Components/TrademarksBanner';
+import Body from './Components/body/Body';
 
 
 function App() {
@@ -35,11 +36,11 @@ function App() {
     <div className="App">
       
       <ProductNabvar />        
-        
+      
         {
           ShoppingCartStatus ? <ShoppingCart /> : <Welcome />       
         }
-
+        <Body/>
         <TrademarksBanner />
 
         <ProductsList />        

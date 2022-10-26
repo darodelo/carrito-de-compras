@@ -6,8 +6,8 @@ import Modal from '../modal/Modal'
 
 const Body = () => {
   return (
-    <div className='Body'>
-        <img src="/public/Fondo.jpg" alt=""></img>
+    <div className="Fondo">
+        
   
     </div>
      

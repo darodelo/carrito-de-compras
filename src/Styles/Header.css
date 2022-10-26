@@ -19,6 +19,7 @@
   position: relative;
   margin-right: 2em;
 }
+
 .header__iconImg {
   height: 50px;
   width: 50px;
@@ -44,6 +45,13 @@
   background-color: rgb(233, 8, 8);
   border-radius: 50%;
   color: #fff;
+}
+@media (max-width:500px) and (min-width:300px) {
+  .header__quantity  {
+    height: 10px;
+    width: 10px;
+    font-size: 0.5em;
+  }
 }
 .NavBarNueva{ 
 color: black;

@@ -1,0 +1,182 @@
+.navBar {
+    
+    margin: 0;
+    display: inline-block;
+   
+    margin-right: 50px;
+    font-size: 25px;
+    padding-right: 80px;
+}
+
+@media (max-width:900px) and (min-width:800px) {
+    .navBar {
+
+        font-size: 20px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width:800px) and (min-width:700px) {
+    .navBar {
+
+        font-size: 20px;
+        padding-right: 30px
+    }
+}
+
+@media (max-width:700px) and (min-width:600px) {
+    .navBar {
+
+        font-size: 20px;
+        padding-right: 0px
+    }
+}
+
+@media (max-width:600px) and (min-width:500px) {
+    .navBar {
+        margin-top: 0;
+        font-size: 12px;
+        padding-right: 0px;
+    }
+}
+
+@media (max-width:500px) and (min-width:300px) {
+    .navBar {
+        
+        font-size: 9px;
+        padding-right: 8px;
+
+    }
+}
+
+.navBar :hover {
+
+    font-weight: bold;
+
+}
+
+.IconoFunkoBlanco {
+    height: 40px;
+}
+
+@media (max-width:1100px) and (min-width:1000px) {
+    .IconoFunkoBlanco {
+
+        height: 40px
+    }
+}
+
+@media (max-width:1000px) and (min-width:900px) {
+    .IconoFunkoBlanco {
+
+        height: 35px
+    }
+}
+
+@media (max-width:900px) and (min-width:800px) {
+    .IconoFunkoBlanco {
+
+        height: 35px
+    }
+}
+
+@media (max-width:800px) and (min-width:700px) {
+    .IconoFunkoBlanco {
+
+        height: 30px
+    }
+}
+
+@media (max-width:700px) and (min-width:600px) {
+    .IconoFunkoBlanco {
+
+        height: 30px
+    }
+}
+
+@media (max-width:600px) and (min-width:500px) {
+    .IconoFunkoBlanco {
+
+        height: 25px
+    }
+}
+
+@media (max-width:500px) and (min-width:400px) {
+    .IconoFunkoBlanco {
+
+        height: 15px
+    }
+}
+
+@media (max-width:400px) and (min-width:200px) {
+    .IconoFunkoBlanco {
+
+        height: 10px
+    }
+}
+
+.navBar :hover {
+
+    font-weight: bold;
+
+}
+
+.IconoCarrito {
+    height: 25px
+}
+
+@media (max-width:1100px) and (min-width:1000px) {
+    .IconoCarrito {
+
+        height: 20px
+    }
+}
+
+@media (max-width:1000px) and (min-width:900px) {
+    .IconoCarrito {
+
+        height: 18px
+    }
+}
+
+@media (max-width:900px) and (min-width:800px) {
+    .IconoCarrito {
+
+        height: 15px
+    }
+}
+
+@media (max-width:800px) and (min-width:700px) {
+    .IconoCarrito {
+
+        height: 12px
+    }
+}
+
+@media (max-width:700px) and (min-width:600px) {
+    .IconoCarrito {
+
+        height: 9px
+    }
+}
+
+@media (max-width:600px) and (min-width:500px) {
+    .IconoCarrito {
+
+        height: 12px
+    }
+}
+
+@media (max-width:500px) and (min-width:400px) {
+    .IconoCarrito {
+
+        height: 12px;
+    }
+}
+
+@media (max-width:400px) and (min-width:200px) {
+    .IconoCarrito {
+
+        height: 9px
+    }
+}
