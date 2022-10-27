@@ -2,14 +2,15 @@
 
 .footer {
     background-color: #FF5533;
-    height: 80px;
+    height: 90px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2em;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    z-index: -9999;
+    position:relative;
+
+    bottom: 0px;
+   
 }
 
 .footer a {
