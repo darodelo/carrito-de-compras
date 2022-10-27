@@ -10,15 +10,17 @@ import Footer from './Components/Footer/Footer';
 import InfoBanner from './Components/InfoBanner';
 import TrademarksBanner from './Components/TrademarksBanner';
 import Body from './Components/body/Body';
-
+import CarouselInstagram from './Components/carrousel/Carousel';
+import Slider from './Components/Slider';
+import SliderMobile from './Components/SliderMobile';
 
 function App() {
-  
-  const { ShoppingCartStatus,FecthData, } = useStore();
- 
-  useEffect(()=>{
+
+  const { ShoppingCartStatus, FecthData, } = useStore();
+
+  useEffect(() => {
     FecthData();
-  },[])
+  }, [])
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -31,24 +33,38 @@ function App() {
       window.removeEventListener("resize", handleResize);
     };
   }, [windowWidth]);
-  
+
   return (
     <div className="App">
+
+      <ProductNabvar />
+
+      {
+        ShoppingCartStatus ? <ShoppingCart /> : <Welcome />
+      }
+      <Body />
+      <TrademarksBanner />
+{/*   
+  ****** PARA USAR ESTE CARRUSEL HAY QUE INSTALAR: ******
+
+  ****** npm install react-material-ui-carousel ******
+
+ */}
+    
+      {
+      windowWidth > 768 ? <Slider /> : <SliderMobile />
+      }
+
+
+      <ProductsList />
+
+{/*       <CarouselInstagram/> */}
+
+      <InfoBanner />
       
-      <ProductNabvar />        
-      
-        {
-          ShoppingCartStatus ? <ShoppingCart /> : <Welcome />       
-        }
-        <Body/>
-        <TrademarksBanner />
 
-        <ProductsList />        
+      <Footer />
 
-        <InfoBanner />
-
-        <Footer />
-        
     </div>
   );
 }

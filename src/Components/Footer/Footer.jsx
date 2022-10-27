@@ -21,16 +21,16 @@ const Footer = () => {
       
         </div>    </a>
         <div className="footer-SocialNetworks">
-          <a href="http://">
+          <a href="#">
             <TwitterIcon fontSize="large" style={{ color: 'black' }} />
           </a>
-          <a href="http://">
+          <a href="#">
             <InstagramIcon fontSize="large" style={{ color: 'black' }}/>
           </a>
-          <a href="http://">
+          <a href="#">
             <FacebookIcon fontSize="large" style={{ color: 'black' }}/>
           </a>
-          <a href="http://">
+          <a href="#">
             <WhatsAppIcon fontSize="large" style={{ color: 'black' }}/>
           </a>
         </div>
