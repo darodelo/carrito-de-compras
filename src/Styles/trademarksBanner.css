@@ -3,9 +3,11 @@
     background-color: #fff;
     width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #fff;;
     flex-wrap: wrap;
+    margin-bottom: -10px;
+    padding-bottom: 10px;
 }
 
 .trademarks-img-banner {
@@ -20,5 +22,4 @@
     width: 300px;
     margin: 10px;
     box-shadow: 4px 4px 4px 0px #F0B09C;
-    ;
 }
