@@ -10,6 +10,8 @@ import Footer from './Components/Footer/Footer';
 import InfoBanner from './Components/InfoBanner';
 import TrademarksBanner from './Components/TrademarksBanner';
 import Body from './Components/body/Body';
+import Slider from './Components/Slider';
+import SliderMobile from './Components/SliderMobile';
 
 
 function App() {
@@ -41,8 +43,11 @@ function App() {
           ShoppingCartStatus ? <ShoppingCart /> : <Welcome />       
         }
         <Body/>
-        <TrademarksBanner />
 
+        <TrademarksBanner />
+        {
+         windowWidth > 768 ? <Slider /> : <SliderMobile />
+        }
         <ProductsList />        
 
         <InfoBanner />
