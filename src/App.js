@@ -10,15 +10,15 @@ import Footer from './Components/Footer/Footer';
 import InfoBanner from './Components/InfoBanner';
 import TrademarksBanner from './Components/TrademarksBanner';
 import Body from './Components/body/Body';
-
+import CarouselInstagram from './Components/carrousel/Carousel';
 
 function App() {
-  
-  const { ShoppingCartStatus,FecthData, } = useStore();
- 
-  useEffect(()=>{
+
+  const { ShoppingCartStatus, FecthData, } = useStore();
+
+  useEffect(() => {
     FecthData();
-  },[])
+  }, [])
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -31,24 +31,27 @@ function App() {
       window.removeEventListener("resize", handleResize);
     };
   }, [windowWidth]);
-  
+
   return (
     <div className="App">
+
+      <ProductNabvar />
+
+      {
+        ShoppingCartStatus ? <ShoppingCart /> : <Welcome />
+      }
+      <Body />
+      <TrademarksBanner />
+
+      <ProductsList />
+
+    <CarouselInstagram/>
+
+      <InfoBanner />
       
-      <ProductNabvar />        
-      
-        {
-          ShoppingCartStatus ? <ShoppingCart /> : <Welcome />       
-        }
-        <Body/>
-        <TrademarksBanner />
 
-        <ProductsList />        
+      <Footer />
 
-        <InfoBanner />
-
-        <Footer />
-        
     </div>
   );
 }
