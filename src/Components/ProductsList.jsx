@@ -13,9 +13,9 @@ import Modal from '@mui/material/Modal';
 function ProductsList() {
   const { ProductAdd, DataFecth } = useStore();
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(null);
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleClose = () => setOpen(null);
   const style = {
       position: 'absolute',
       top: '50%',
